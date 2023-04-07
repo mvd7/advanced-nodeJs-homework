@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "7ccdb3ee-e6cd-42af-abaf-9a9007355949",
+		"name": "Customers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26461462"
+	},
+	"item": [
+		{
+			"name": "ADD CUSTOMER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\":\"Jhonny\",\r\n  \"email\":\"jhonny@mail.com\",\r\n  \"phone\":\"123123123\",\r\n  \"address\":{\r\n    \"street\":\"Street unnamed\",\r\n    \"country\":\"Austria\",\r\n    \"city\":\"Vienna\",\r\n    \"zip\":2223\r\n  }\r\n}\r\n \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL CUSTOMERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CUSTOMER BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/customers/6429c3bcb0b4ceab14e2a95d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"6429c3bcb0b4ceab14e2a95d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE CUSTOMER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/customers/6429c2f9cc85b87261e23f5d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"6429c2f9cc85b87261e23f5d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE CUSTOMER",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\":\"Alex Alexovic\",\r\n  \"email\":\"alex.new@mail.com\",\r\n  \"phone\":\"078888888\",\r\n  \"address\":{\r\n    \"street\":\"Bulevar 2\",\r\n    \"country\":\"Sofia\",\r\n    \"city\":\"Bulgaria\",\r\n    \"zip\":2223\r\n  }\r\n}\r\n ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/customers/6429c3bcb0b4ceab14e2a95d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"6429c3bcb0b4ceab14e2a95d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
