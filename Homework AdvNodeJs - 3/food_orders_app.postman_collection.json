@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "310f0d1b-cf31-4bef-9878-2c94e3c5f722",
+		"name": "food_orders_app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26461462"
+	},
+	"item": [
+		{
+			"name": "Get Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
