@@ -6,7 +6,7 @@ export class OrderController {
   constructor(private readonly orderService: OrderService) {}
 
   @Get()
-  getProducts() {
+  getOrders() {
     const orders = this.orderService.getOrders();
 
     return orders;
